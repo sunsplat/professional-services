@@ -7,6 +7,9 @@ section.resume-section {
     .resume-date {
       max-width: 30em;
       min-width: none;
+      .image-md {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -14,7 +17,7 @@ section.resume-section {
 @media (min-width: 576px) {
   section.resume-section {
     .image-md {
-      max-width: 100%;
+      width: 100%;
     }
   }
 }
@@ -35,8 +38,5 @@ section.resume-section {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
-    .image-md {
-      max-width: 80%;
-    }
   }
 }

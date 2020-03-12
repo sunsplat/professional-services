@@ -144,9 +144,13 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+section.resume-section .resume-item .resume-date .image-md {
+  max-width: 100%;
+}
+
 @media (min-width: 576px) {
   section.resume-section .image-md {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -166,9 +170,6 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
-  }
-  section.resume-section .image-md {
-    max-width: 80%;
   }
 }
 
