@@ -83,10 +83,6 @@ p.lead {
   color: #6f42c1;
 }
 
-.image-md {
-  width: 80%;
-}
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -144,7 +140,14 @@ section.resume-section {
 }
 
 section.resume-section .resume-item .resume-date {
+  max-width: 30em;
   min-width: none;
+}
+
+@media (min-width: 576px) {
+  section.resume-section .image-md {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -154,12 +157,18 @@ section.resume-section .resume-item .resume-date {
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+  section.resume-section .resume-item .resume-date .image-md {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+  section.resume-section .image-md {
+    max-width: 80%;
   }
 }
 
